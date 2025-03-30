@@ -1,8 +1,32 @@
 {
 	"name": "@codeeditorland/gulp-electron",
+	"version": "0.0.1",
+	"private": false,
 	"description": "gulp plugin for packaging Electron into VS Code",
+	"keywords": [
+		"codeeditorland",
+		"land",
+		"playform"
+	],
+	"homepage": "HTTPS://GitHub.Com/CodeEditorLand/LandGulpElectron#readme",
+	"bugs": {
+		"url": "HTTPS://GitHub.Com/CodeEditorLand/LandGulpElectron/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+HTTPS://github.com/CodeEditorLand/LandGulpElectron.git"
+	},
+	"license": "SEE LICENSE IN LICENSE",
+	"author": {
+		"name": "Source 🖋️ Open 👐🏻",
+		"email": "Source/Open@Editor.Land",
+		"url": "HTTPS://Editor.Land"
+	},
+	"type": "module",
 	"main": "src/index.js",
-	"scripts": {},
+	"scripts": {
+		"prepublishOnly": "Build 'Source/**/*.ts'"
+	},
 	"dependencies": {
 		"@octokit/rest": "21.1.1",
 		"event-stream": "4.0.1",
@@ -17,5 +41,10 @@
 		"vinyl": "3.0.0",
 		"vinyl-fs": "4.0.0"
 	},
-	"devDependencies": {}
+	"devDependencies": {
+		"@playform/build": "0.2.1"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
 }
